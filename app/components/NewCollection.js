@@ -30,7 +30,7 @@ export function NewCollection({ label, onAddCollection }) {
       <button onClick={() => setIsOpen(true)}>{label}</button>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent
-          className="sm:max-w-[425px] mx-4 sm:mx-auto w-[calc(100%-2rem)] gap-2 max-w-md"
+          className="sm:max-w-[425px] w-full max-w-md mx-auto"
           aria-describedby="dialog-description"
         >
           <form onSubmit={handleSubmit}>

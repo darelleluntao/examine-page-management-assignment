@@ -22,7 +22,15 @@ export default function Home() {
   const [getUpdates, setGetUpdates] = useState(true);
 
   function handlePageSaved() {
-    setIsPageSaved((prev) => !prev);
+    setIsPageSaved((prev) => {
+      const newIsPageSaved = !prev;
+      if (!newIsPageSaved) {
+        setGetUpdates(false);
+      } else {
+        setGetUpdates(true);
+      }
+      return newIsPageSaved;
+    });
     setIsOpen((prev) => !prev);
   }
 
