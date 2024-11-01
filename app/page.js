@@ -2,7 +2,7 @@
 
 import ListCollection from "./components/ListCollection";
 import NewCollection from "./components/NewCollection";
-import BookmarkIcon from "./components/common/Bookmarkcon";
+import BookmarkIcon from "./components/common/BookmarkIcon";
 import GetUpdatesSwitch from "./components/common/GetUpdatesSwitch";
 import PageSheet from "./components/common/PageSheet";
 import React from "react";
